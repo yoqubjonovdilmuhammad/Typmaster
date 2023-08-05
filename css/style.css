@@ -1,0 +1,350 @@
+/* barlow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/barlow-v12-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/barlow-v12-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/barlow-v12-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/barlow-v12-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/barlow-v12-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  /* colors */
+  --orange-color: #f16718;
+  --orange-color-light-color: #ff9b62;
+  --dark-blue-color: #162542;
+  --dark-blue-light-color: #7b8bad;
+  --space-color: #e8eff2;
+  --white-color: #ffffff;
+
+  --h1-fs: 5.6rem;
+  --h1-lh: 1;
+
+  --h2-fs: 3.2rem;
+  --h2-lh: 1.125;
+
+  --h3-fs: 2.4rem;
+  --h3-lh: 1.116;
+
+  --body-fs: 1.6rem;
+  --body-lh: 1.62;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: 2px dotted var(--dark-blue-light-color);
+  outline-offset: 3px;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Barlow", sans-serif;
+  font-size: var(--body-fs);
+  line-height: var(--body-lh);
+  color: var(--dark-blue-light-color);
+  position: relative;
+}
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  color: var(--dark-blue-color);
+}
+h1 {
+  font-size: var(--h1-fs);
+  line-height: var(--h1-lh);
+}
+h2 {
+  font-size: var(--h2-fs);
+  line-height: var(--h2-lh);
+}
+h3 {
+  font-size: var(--h3-fs);
+  line-height: var(--h3-lh);
+}
+.btn {
+  border-radius: 8px;
+  padding: 16px 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1, 6rem;
+  line-height: 1, 6;
+  transition: 0.5s;
+}
+.btn-orange {
+  color: var(--white-color);
+  background-color: var(--orange-color);
+}
+.btn-orange:hover {
+  background-color: var(--orange-color-light-color);
+}
+
+.btn-space {
+  color: var(--dark-blue-color);
+  background-color: var(--space-color);
+}
+
+.btn-space:hover {
+  color: var(--white-color);
+  background-color: var(--dark-blue-color);
+}
+main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__container {
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-logo:hover {
+  opacity: 0.8;
+}
+.site-logo:active {
+  overflow: 0.6;
+}
+
+/* MAIN STYLES */
+.hero {
+  padding-top: 2.8rem;
+}
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__content {
+  width: 100%;
+  max-width: 445px;
+}
+
+.hero__title {
+  margin-bottom: 2.4rem;
+}
+.hero__desc {
+  color: #7b8bad;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px; /* 144.444% */
+  margin-bottom: 4rem;
+}
+.hero__img {
+  margin-bottom: 50px;
+  border-radius: 8px;
+}
+
+.info__container {
+  display: flex;
+}
+.key__imges {
+  display: flex;
+  margin-right: 110px;
+}
+.key__images__rightimg {
+  border-radius: 16px;
+  margin-right: 30px;
+  mix-blend-mode: multiply;
+  opacity: 0.7486;
+}
+.kay__images__left {
+  border-radius: 18px;
+}
+.kayboard__info {
+  width: 100%;
+  max-width: 255px;
+  padding-top: 160px;
+}
+.kayboard__info__title {
+  margin-bottom: 27px;
+  color: #162542;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 36px; /* 112.5% */
+  text-transform: uppercase;
+}
+.kayboard__info_text {
+  color: #7b8bad;
+  font-size: 15.5px;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+}
+
+.desc__list {
+  display: flex;
+}
+.desc__item {
+  width: 100%;
+  max-width: 255px;
+  margin-right: 30px;
+  margin-bottom: 128px;
+}
+.desc1 {
+  padding-bottom: 48px;
+  margin-top: 131px;
+}
+.desc__title {
+  color: #162542;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px; /* 116.667% */
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.desc__text {
+  width: 255px;
+  color: #7b8bad;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+}
+.fotter__text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+
+@media screen and (max-width: 507px) {
+  .header__container {
+    padding-top: 2.7rem;
+    padding-bottom: 2.7rem;
+  }
+  .btn {
+    padding: 1.1rem 1.4rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .hero__img {
+    width: 100%;
+    max-width: 478px;
+  }
+}
+
+@media screen and (max-width: 694px) {
+  .hero__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__btns {
+    padding-bottom: 80px;
+  }
+
+  .info__container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .kay__images__left {
+    width: 100%;
+    max-width: 220px;
+  }
+  .key__images__rightimg {
+    width: 100%;
+    max-width: 129px;
+    border-radius: 0px 15px 15px 0px;
+    padding-right: 0;
+  }
+
+  .kayboard__info {
+    margin-top: -100px;
+  }
+  .kayboard__info_text {
+    color: #7b8bad;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+  }
+
+  .desc__list {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .desc1 {
+    padding-left: 95px;
+    opacity: 0.7486;
+  }
+}
